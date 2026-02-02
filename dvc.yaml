@@ -1,0 +1,35 @@
+stages:
+  prepare:
+    cmd: python src/data/make_dataset.py
+    deps:
+      - src/data/make_dataset.py
+      - data/raw/UCI_Credit_Card.csv
+    outs:
+      - data/processed/train.csv
+      - data/processed/test.csv
+    desc: "Загрузка и первичная обработка данных, разделение на train/test"
+
+  feature_engineering:
+    cmd: python src/features/build_features.py
+    deps:
+      - src/features/build_features.py
+      - data/processed/train.csv
+      - data/processed/test.csv
+    outs:
+      - data/processed/train.csv
+      - data/processed/test.csv
+    desc: "Создание новых признаков (Feature Engineering)"
+
+  train:
+    cmd: python src/models/train.py --model gradient_boosting
+    deps:
+      - src/models/train.py
+      - src/models/pipeline.py
+      - data/processed/train.csv
+      - data/processed/test.csv
+    outs:
+      - models/credit_default_model_gradient_boosting.pkl
+    metrics:
+      - metrics.json:
+          cache: false
+    desc: "Обучение модели и логирование метрик в MLflow"
