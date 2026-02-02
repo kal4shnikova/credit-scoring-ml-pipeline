@@ -249,9 +249,6 @@ GitHub Actions автоматически выполняет:
 3. Запустите тесты
 4. Переобучите модель
 
-## 📝 Лицензия
-
-Учебный проект для курса "Автоматизация процессов разработки и тестирования моделей машинного обучения"
 
 ## 📧 Контакты
 
@@ -259,5 +256,5 @@ GitHub Actions автоматически выполняет:
 
 ---
 
-**Дата создания:** Февраль 2026  
-**Датасет:** [UCI Credit Card Default Dataset](https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients)
+
+**Датасет:** [UCI Credit Card Default Dataset]([https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients](https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset?spm=a2ty_o01.29997173.0.0.532fc921UIOjfa))
