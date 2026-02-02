@@ -257,4 +257,4 @@ GitHub Actions автоматически выполняет:
 ---
 
 
-**Датасет:** [UCI Credit Card Default Dataset](https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients](https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset?spm=a2ty_o01.29997173.0.0.532fc921UIOjfa)
+**Датасет:** [UCI Credit Card Default Dataset]([https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients](https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset?spm=a2ty_o01.29997173.0.0.532fc921UIOjfa](https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset?spm=a2ty_o01.29997173.0.0.532fc921UIOjfa))
